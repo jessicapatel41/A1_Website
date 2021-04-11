@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<!--Header of the program, section options here-->
+
+<head>
+    <!--Are able to view the site on a narrow width browser-->
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <title>Dunedin Dairy</title>
+    <link href="jpat873.css" rel="stylesheet" type="text/css" ; />
+    <script defer="true" src="jpat873.js"></script>
+    <link rel="icon"
+        href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/google/241/cow_1f404.png">
+</head>
+
+<!--Body of app starts here-->
+
+<body>
+    <main>
+        <header>
+            <img id="logo" src="http://redsox.uoa.auckland.ac.nz/ds/logo-192x192.png" alt="Display logo here"
+                width="120">
+            <h1>Dunedin Dairy</h1>
+        </header>
+        <!--Navigation where the different tabs are stored-->
+        <nav>
+            <ul style="cursor: pointer;">
+                <li id="homeTab" onclick="showHome();">
+                    <p style="font-size: 20px; color: black;"><b>Home</b> &#127968;</p>
+                </li>
+                <li id="productTab" onclick="showProduct();">
+                    <p style="font-size: 20px; color: black;"><b>Products</b> &#128722;</p>
+                </li>
+                <li id="locationTab" onclick="showLocation();">
+                    <p style="font-size: 20px; color: black;"><b>Location</b> &#128204;</p>
+                </li>
+                <li id="newsTab" onclick="showNews();">
+                    <p style="font-size: 20px; color: black;"><b>News</b> &#128240;</p>
+                </li>
+                <li id="guestBookTab" onclick="showGuestBook();">
+                    <p style="font-size: 20px; color: black;"><b>GuestBook</b> &#128214;</p>
+                </li>
+            </ul>
+        </nav>
+
+
+        <article>
+            <!--first section of application-->
+            <div id="Home">
+                <p>Welcome to the Dunedin Dairy website! At the Dunedin dairy you will find products that will meet your
+                    needs at a low price! In our products section you able to freely search products you wish to buy and
+                    view
+                    the associated price. Find out the exciting news and events on our news page. </p>
+                <p>Curious to know where we are located? Check out the location page to see where we are placed and
+                    pay us a visit! Lastly, feel free to leave comments in our guestbook and tell us how was your
+                    experience was
+                    at our dairy!</p>
+                <img id="cow" src="https://wonderopolis.org/wp-content/uploads/2015/08/1495_f.jpg"
+                    alt="Display picture of cow" width="100%">
+                <!--Referencing owner of the cow picture-->
+                <p id="photoCred">Reference: National Center for Families Learning - wonderopolis (2014–2020)</p>
+            </div>
+
+            <!--second section of application-->
+            <div id="Product">
+                <h3>Products</h3>
+                <hr width="120%" />
+                <!--Search bar - input for searching products -->
+                <p id="searchItem"><b>Search product:</b></p>
+                <input id="myInput" type='text' onkeyup="inputFunction()" onfocus="this.value=''" value=""></input>
+                <hr width="120%" />
+                <p id="pTab"></p>
+            </div>
+
+            <!--third section of application-->
+            <div id="Location">
+                <h2>Location</h2>
+                <hr width="120%" />
+                <!--Hotlink the image of the map of Dunedin Dairy-->
+                <img id="map" src="http://redsox.uoa.auckland.ac.nz/ds/map.png" alt="Display location map here"
+                    width="500px">
+                <hr width="120%" />
+                <p id="vcard"></p>
+            </div>
+
+            <!--fourth section of application-->
+            <div id="News">
+                <h2>News</h2>
+                <p>To learn more, click on the images to view their website!</p>
+                <hr width="120%" />
+                <p id="nTab"></p>
+            </div>
+
+            <!--fifth section of application-->
+            <div id="Guestbook">
+                <h2>Guestbook</h2>
+                <hr width="120%" />
+
+                <!--Comment Box-->
+                <p><b>Please leave us comment! </b></p>
+                <textarea rows="5" cols="50" style="width: 500px; height:200px" id="commentBox" type="text"
+                    onfocus="this.value=''" value=""></textarea>
+
+                <!--Name Box-->
+                <p id="nameInput"><b>Your Name:</b></p>
+                <input style="width: 200px" id="nameBox" type="text">
+
+                <!--Post Button -->
+                <button onclick="postButton()" onclick="document.getElementById('commentBox').value = ''"> Post</button>
+
+                <hr width="120%" />
+
+                <!--Use iframe to get the server of comments-->
+                <p><b>Recent Posts</b></p>
+                <iframe name="refreshTheFrame" id="serverComment"
+                    src="http://redsox.uoa.auckland.ac.nz/ds/DairyService.svc/htmlcomments" width="500px" ;
+                    height="500px"></iframe>
+            </div>
+        </article>
+
+        <!--footer made for referencing-->
+        <footer>
+            <p>Reference: pumashoeme - Cow Print Seamless Pattern, Vecteezy (No Date)</p>
+            <p>&copy; Jessica Patel 2020 </p>
+        </footer>
+    </main>
+
+</body>
+
+</html>

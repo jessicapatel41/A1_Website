@@ -1,0 +1,145 @@
+/*Styling for headings */
+h1{
+    color: white;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 50px;
+}
+
+h2{
+    font-size: 30px;
+    padding-left: 20px; 
+}
+
+h3{
+    font-size: 30px;
+    padding-left: 35px; 
+}
+
+header{
+	padding: 20px 25px;
+	background-color:black;
+	border-radius: 25px 25px 0px 0px;
+	text-align: left;
+}
+
+
+/*Styling for body part */
+body {
+	font-family: "Tahoma, Geneva", sans-serif;
+	font-size: 18px;
+    background-image: url("https://img.pixers.pics/pho_wat(s3:700/FO/71/93/85/11/700_FO71938511_0d2e7e116a55619f85259fec6dce6cee.jpg,700,597,cms:2018/10/5bd1b6b8d04b8_220x50-watermark.png,over,480,547,jpg)/laptop-stickers-seamless-cow-print.jpg.jpg");
+}
+
+main{
+	width: 960px; 
+	margin: 35px auto;
+	padding:2px;
+	background-color: #FFFFFF; 
+	border-radius: 25px 25px 25px 25px;
+	box-shadow: 0px 0px 25px rgb(255,182,193);
+}
+
+article{
+	width: 736px; 
+	padding:10px;
+	text-align: left;
+	float:left;
+}
+
+p {
+    padding-left: 20px;
+}
+
+
+
+
+/* Styling for the navigation */
+nav{
+	padding: 10px 25px;
+	background-color: lightpink;
+	border-style: solid;
+	font-size: 14px;
+	border-width: 1px 0 0 0;
+	border-color: #fff;
+	overflow: hidden;
+ }
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+nav ul li {
+	list-style: none;
+	margin: 0 2.5em 0 0;
+	padding: 0;
+	float: left;
+	font-size: 1.2em;
+}
+
+
+
+/* Styling for the footer */
+footer {
+	padding:10px 25px;
+	background-color: lightpink;
+	font-size: 14px;
+	border-radius: 0px 0px 25px 25px;
+	clear:both;
+}
+
+footer p{
+	color: #FFFFFF;
+	font-size:18x;
+	font-weight:normal;
+	font-family: "Tahoma, Geneva", sans-serif;
+	text-align: left;
+	overflow:auto;
+}
+
+
+
+
+/* special ids*/
+#cow{
+    padding-left: 20px;
+}
+
+#map{
+    padding-left: 20px;
+}
+
+#commentBox, #nameBox, #serverComment {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+#originItem,  #priceItem{
+    padding-left: 130px;
+}
+
+#buttonBuy{
+    margin-left: 70px;
+    font-size: 20px;
+}
+
+#logo{
+    float:right;
+}
+
+#homeTab, #productTab, #locationTab, #newsTab, #guestBookTab{
+    padding-right: 10px;
+}
+
+#searchItem{
+    display: inline-block;
+    text-align: right;
+    width: 150px;
+}
+
+#photoCred{
+    font-size: 15px;
+}
+
